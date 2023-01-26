@@ -16,7 +16,9 @@ tip = int(input("How much tip would you like to give? 10, 12, or 15? "))
 num_of_split = int(input("How many people to split the bill? "))
 
 calculate_bill = bill * (1 + (tip/100)) / num_of_split
+
 #A format of . 2f (note the f ) means to display the number with two digits after the decimal point
+
 final_amount = "{:.2f}".format(calculate_bill, 2)
 
 if tip == 10:
